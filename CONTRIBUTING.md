@@ -1,10 +1,10 @@
-# Contributing to EcoTracker
+# Contributing to My Center Manager
 
 Feedback and contribution are welcome. Contributions are made to this repo via Issues and Pull Requests.
 
 ## Submitting bug reports and feature requests
 
-The EcoTracker team monitors the issue tracker in the repository. Bug reports and feature requests specific to this repository should be filed in this issue tracker. The team will respond to all newly filed issues.
+The My Center Manager team monitors the issue tracker in the repository. Bug reports and feature requests specific to this repository should be filed in this issue tracker. The team will respond to all newly filed issues.
 
 ## Submitting pull requests
 
@@ -13,7 +13,7 @@ We encourage pull requests and other contributions from the community.
 - Be accompanied by a complete Pull Request template (loaded automatically when a PR is created).
 - Add unit or integration tests for fixed or changed functionality.
 
-When you submit a pull request or otherwise seek to include your change in the repository, you waive all your intellectual property rights, including your copyright and patent claims for the submission. For more details please read the [contribution agreement](https://github.com/ecotracker/legal/blob/main/contribution-agreement.md).
+When you submit a pull request or otherwise seek to include your change in the repository, you waive all your intellectual property rights, including your copyright and patent claims for the submission. For more details please read the [contribution agreement](https://github.com/mycentermanager/legal/blob/main/contribution-agreement.md).
 
 In general, we follow the ["fork-and-pull" Git workflow](https://github.com/susam/gitpr)
 

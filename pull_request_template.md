@@ -1,7 +1,7 @@
 ### Describe the purpose of your pull request
 
 - Provide a clear and concise description of the changes.
-- List the **user facing** changes and if any, add the @configcat/ux team as reviewer.
+- List the **user facing** changes and if any, add the @aiherrera user as reviewer.
 
 ### Related issues (only if applicable)
 

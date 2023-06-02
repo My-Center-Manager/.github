@@ -1,30 +1,26 @@
 <!-- logo -->
 <p align="center">
-  <img width='300' src="profile/readme/logo.png">
+  <img width='300' src="profile/readme/logo.svg">
 </p>
 <!-- title -->
 <h1 align="center" style="display:flex;justify-content:center;align-items:center;width:100%;gap:10px;padding:10px 0;margin-bottom:20px;border-bottom:1px solid #4a4f57">
-    EcoTracker
-    <img width="25" height="25" style="flex" src="profile/readme/title.svg" />
+    My Center Manager
 </h1>
 <!-- powered by -->
 <p align="center">
   <a aria-label="Vercel logo" href="https://vercel.com">
     <img src="https://img.shields.io/badge/POWERED%20BY%20Vercel-000.svg?style=for-the-badge&logo=Vercel&labelColor=000">
   </a>
-  <a aria-label="Vercel logo" href="https://appwrite.io">
-    <img src="https://img.shields.io/badge/AND%20appwrite-f02e65.svg?style=for-the-badge&labelColor=f02e65">
-  </a>
 </p>
 <!-- brief description -->
 <p align="center">
   <a href="#" target="_blank">
-    <img alt="License" src="https://img.shields.io/github/license/aiherrera/ecotracker?style=flat-square&labelColor=343b41.svg"/>
+    <img alt="License" src="https://img.shields.io/github/license/my-center-manager/My-Manager-Center?style=flat-square&labelColor=343b41.svg"/>
   </a>
-  <img alt="Stars" src="https://img.shields.io/github/stars/aiherrera/ecotracker?style=flat-square&labelColor=343b41.svg"/>
-  <img alt="Issues" src="https://img.shields.io/github/issues/aiherrera/ecotracker?style=flat-square&labelColor=343b41"/>  
+  <img alt="Stars" src="https://img.shields.io/github/stars/aiherrera/My-Manager-Center?style=flat-square&labelColor=343b41.svg"/>
+  <img alt="Issues" src="https://img.shields.io/github/issues/aiherrera/My-Manager-Center?style=flat-square&labelColor=343b41"/>  
   
-  <p align="center">EcoTracker is an app that offers tips and tracks progress towards living a more sustainable lifestyle.</p>
+  <p align="center">My Manager Center is a SAAS app that allow users to manage their centers of service</p>
 </p>
 
 <h2 style="display:flex;align-items:center;gap:10px;padding:10px 0;margin-bottom:20px;border-bottom:1px solid #4a4f57">
@@ -32,11 +28,11 @@
   <span>Quick overview</span>
 </h2>
 
-<p align="center">In an era where sustainability is more important than ever, EcoTracker seeks to provide an accessible and engaging platform for anyone looking to make a difference. Whether you're just starting on your sustainability journey or you're an eco-warrior, EcoTracker is designed to support and guide you. Give it a try and take your first (or next) step towards a more sustainable future.</p>
+<p align="center">To be defined</p>
 
 <p align="center">
-  <a href="https://ecotracker.life">Website</a> •
-  <a href="https://github.com/EcoTracker/legal/blob/main/LICENSE">License</a> •
+  <a href="https://mycenter.mx">Website</a> •
+  <a href="https://github.com/My-Center-Manager/legal/blob/main/LICENSE">License</a> •
   <a href="CONTRIBUTING.md">Contributing</a>
 </p>
 
@@ -48,13 +44,54 @@
 </h2>
 
 ```mermaid
-graph LR
-    A[User] -- Actions --> B[Frontend: Next.js + TailwindCSS]
-    B -- API Requests --> C[Backend: Appwrite]
-    C -- Data Management --> D[Database]
-    C -- User Management --> E[Account Service]
-    C -- Realtime Updates --> F[Realtime Service]
-    C -- Storage --> G[Storage Service]
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#006CFC',
+      'primaryTextColor': '#ffffff',
+      'primaryBorderColor': '#1F2937',
+      'lineColor': '#E5E7EB',
+      'secondaryColor': '#008227',
+      'tertiaryColor': '#1F2937'
+    }
+  }
+}%%
+graph TB
+  accTitle: High level diagram
+  accDescr: This is a high level diagram for the SAAS template project
+
+  subgraph User Interface
+    Next.js["Next.js"]
+    Authentication["Authentication"]
+    Admin["Admin Dashboard"]
+    Database["MongoDB | Supabase"]
+    AWSS3["AWS S3"]
+    Subscriptions["Subscription Management"]
+    UI["Vercel"] -- Hosting --> Next.js
+  end
+
+  S3["S3 Bucket"]
+  payments["Stripe | Paypal"]
+  MongoDBInstance["MongoDB Instance"]
+  PostgresInstance["Postgres Instance"]
+  SupabaseAuth["Supabase Auth"]
+  MongoDBAuth["MongoDB Atlas - Auth"]
+
+  Next.js -- Database layer --> Database
+  Next.js -- Auth layer --> Authentication
+  Next.js --> Admin
+  Next.js -- File management --> AWSS3
+  Next.js -- Payments --> Subscriptions
+
+  Authentication -. API Requests .-> Clerk
+  Authentication -. API Requests .-> MongoDBAuth
+  Authentication -. API Requests .-> SupabaseAuth
+  Database -. API Requests .-> MongoDBInstance
+  Database -. API Requests .-> PostgresInstance
+  AWSS3 -. API Requests .-> S3
+  Subscriptions -. API Requests .-> payments
+
 ```
 
 <h2 style="display:flex;align-items:center;gap:10px;padding:10px 0;margin-bottom:20px;border-bottom:1px solid #4a4f57">
@@ -62,13 +99,13 @@ graph LR
   <span>Features</span>
 </h2>
 
-- 🌱 **Tips and Suggestions**: EcoTracker offers tips and suggestions on various categories of sustainability - like waste reduction, energy efficiency, and sustainable eating, providing a starting point for anyone looking to adopt a more eco-friendly lifestyle.
+- 🌱 **Tips and Suggestions**: To be defined
 
-- 📈 **Progress Tracking**: With EcoTracker, users can set sustainability goals and track their progress over time. The platform offers a visual representation of progress, fostering motivation and adherence.
+- 📈 **Progress Tracking**: To be defined
 
-- 🌍 **Community Interaction**: EcoTracker isn't just a tool, but also a community. Users can share their own tips and experiences, fostering discussion and mutual growth towards a common goal of sustainability.
+- 🌍 **Community Interaction**: To be defined
 
-- 📆 **Notifications/Reminders**: To aid users in achieving their sustainability goals, EcoPath sends reminders and motivational messages. This helps users maintain consistency and progress towards a greener lifestyle.
+- 📆 **Notifications/Reminders**: To be defined
 
 <h2 style="display:flex;align-items:center;gap:10px;padding:10px 0;margin-bottom:20px;border-bottom:1px solid #4a4f57">
   <img width="25" height="25" style="flex" src="profile/readme/author.svg" />
@@ -88,7 +125,7 @@ graph LR
   <span>Contribute</span>
 </h2>
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/aiherrera/ecotracker/issues). You can also take a look at the [contributing guide](https://github.com/aiherrera/ecotracker/blob/master/CONTRIBUTING.md)
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/My-Center-Manager/mycenter/issues). You can also take a look at the [contributing guide](https://github.com/My-Center-Manager/mycenter/blob/master/CONTRIBUTING.md)
 
 <h2 style="display:flex;align-items:center;gap:10px;padding:10px 0;margin-bottom:20px;border-bottom:1px solid #4a4f57">
   <img width="25" height="25" style="flex" src="profile/readme/support.svg" />
